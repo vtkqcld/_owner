@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sign in to your SkyWorld Stall owner workspace.">
+  <title>Owner sign in · SkyWorld Stall</title>
+  <link rel="icon" href="../logo.png">
+  <script src="../config.js"></script>
+  <script src="../shared/theme.js"></script>
+  <link rel="stylesheet" href="../shared/base.css">
+  <link rel="stylesheet" href="portal.css">
+</head>
+<body class="portal-body">
+  <a class="skip-link" href="#authCard">Skip to sign in</a>
+  <header class="portal-top">
+    <a class="portal-brand" href="./" aria-label="SkyWorld Stall portal home">
+      <img src="logo.png" alt="">
+      <span><span class="pb-name">SkyWorld</span><span class="pb-sub">Owner portal</span></span>
+    </a>
+    <span class="spacer"></span>
+    <button type="button" class="theme-toggle" data-theme-toggle aria-label="Switch colour theme" title="Switch colour theme">
+      <svg class="ic ic-moon" aria-hidden="true"><use href="../shared/icons.svg#i-moon"></use></svg>
+      <svg class="ic ic-sun" aria-hidden="true"><use href="../shared/icons.svg#i-sun"></use></svg>
+    </button>
+  </header>
+  <main class="portal-wrap">
+    <section class="portal-hero portal-hero-brand" aria-labelledby="portalTitle">
+      <div class="hero-brand-block">
+        <img src="logo.png" alt="SkyWorld Stall logo" class="hero-logo">
+        <h1 id="portalTitle" class="hero-brand-title">Stall Owner</h1>
+      </div>
+    </section>
+    <section class="portal-panel" aria-live="polite">
+      <div class="auth-card" id="authCard">
+        <div class="loading-block"><span class="spinner"></span>Preparing the portal…</div>
+      </div>
+      <p class="portal-note"><svg class="ic" aria-hidden="true"><use href="../shared/icons.svg#i-info"></use></svg><span id="providerNote">Checking the server’s email and SMS delivery configuration…</span></p>
+    </section>
+  </main>
+  <footer class="portal-footer">
+    <span>© 2026 SkyWorld Stall.</span>
+  </footer>
+  <script src="../shared/api.js"></script>
+  <script src="../shared/ui.js"></script>
+  <script src="portal.js"></script>
+</body>
+</html>
